@@ -1,10 +1,10 @@
-while True:
+while True: # makes the problem always on until it gets broken,
     print("____________________________")
     print(" ######## Calculator ######## ")
 
     num1 = input("Enter First number(or q to quit): ")
     if num1 == 'q':
-        break
+        break # here the break statements break the progrome
     operator = input("Enter your operator (+, - , *, /,pow, undroot):  ")
 
     num2 = input("Enter 2nd number: ")
