@@ -1,0 +1,4 @@
+Data structure 
+=> store data 
+=> retrive data 
+=> organise data 
