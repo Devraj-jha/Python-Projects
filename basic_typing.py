@@ -9,9 +9,8 @@ def realistic_fast_typing(text, wpm=300):
     
     for char in text:
         keyboard.write(char)
-        # Very small random delay for natural rhythm
-        if char != ' ':  # Spacebar is instant in real typing
+        if char != ' ':  
             time.sleep(base_delay * random.uniform(0.7, 1.3))
 
 time.sleep(3)
-realistic_fast_typing(text_to_type, wpm=700)
+realistic_fast_typing(text_to_type, wpm=600)
