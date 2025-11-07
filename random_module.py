@@ -7,5 +7,14 @@
 # randinit(a,b) -> returns a int between a,b 
 # choice(sequnce) -> returns one random element. 
 
-for i in range(8): 
-    print(i)
+import random # to impornt any module. 
+#module is a just a file that comtains python code functions classses variables. 
+# like a tool box
+
+#* 
+a = random.random() # returns a random float b/w integer. 
+
+print(a)
+
+b = random.randint(2,5) #returns an integer. 
+# so there are things like such.
