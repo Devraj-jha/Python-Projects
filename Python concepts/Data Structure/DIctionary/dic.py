@@ -1,16 +1,51 @@
-# keyvalue pair
+#A mutable mapping from keys -> values , implemented using hash table
 
-my_dict = {
-    "name": "Alice",
-    "age": 25,
-    "city": "London"
-}
+
+# Mapping → relationship, not sequence
+
+# Keys → Values → lookup by meaning, not position
+
+# Mutable → can change over time
+
+# Hash table → extremely fast lookup
+
+# Keys must be:
+
+# Unique
+
+# Hashable
+
+# Immutable
 
 person = {
-    "name" : "dj",
-    "age" : 19
+    "name": "Alice",
+    "age": 25,
+    "city": "Delhi"
 }
-person["name"]   # "John"
 
-person["age"] = 31               # update
-person["country"] = "USA"        # add new key-value pair
+
+d = dict(name="Alice", age=25)
+pairs = [("a", 1), ("b", 2)]
+d = dict(pairs)
+# accessing 
+
+person["name"]
+# safe access
+person.get("salary")        # None
+person.get("salary", 0)     # default
+
+person["age"] = 26
+person["salary"] = 50000
+# adds if new, else modify
+# to delete something 
+
+del person["city"]
+person.pop('city')
+
+#mutable objects 
+a = {"x": 1}
+b = a
+b["y"] = 2
+
+print(a)  # {'x': 1, 'y': 2}
+
