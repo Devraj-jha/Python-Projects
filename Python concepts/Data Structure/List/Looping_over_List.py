@@ -12,3 +12,8 @@ for value in range(1,5):
 
 num = list(range(4))
 print(num)
+
+for x in num: 
+    ## do something here with the particular elements
+    print(x)
+
